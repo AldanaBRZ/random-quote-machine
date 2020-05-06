@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  max-width: 100%;
+  padding: 14%;
+  background-color: #4a7c7c;
+  margin: 0 auto;
+}
+
+#quote-box {
+  position: relative;
+  /* display: table; */
+  background-color: aliceblue;
+}
+
+#text {
+  font-family: 'Poppins', sans-serif;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+#author {
+  text-align: right;
+}
+
+blockquote {
+  border-left: none;
+  color: #4a7c7c;
+}
+
+.btn:hover{
+  text-decoration: currentColor;
+}
