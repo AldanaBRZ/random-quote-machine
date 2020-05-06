@@ -119,7 +119,7 @@ class QuoteBox extends Component {
     }
 
     return(
-      <div id="quote-box" className="card shadow-lg col-xs-12 col-sm-8 col-md-8 mx-auto" id="quote-box">
+      <div id="quote-box" className="card shadow-lg col-xs-12 col-sm-8 col-md-8 mx-auto">
         <Quote className="card-body" quotes={quotes} index={index} />
         <TwitterButton quote={quotes[index].quote} author={quotes[index].author} />
         <Button handleClick={handleClick} />
