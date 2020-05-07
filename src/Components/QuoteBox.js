@@ -7,8 +7,7 @@ class QuoteBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showingQuote: false,
-      index: 2,
+      index: null,
       quotes: [
         {
           quote:  ' Live as if you were to die tomorrow. Learn as if you were to live forever.',
@@ -107,14 +106,13 @@ class QuoteBox extends Component {
   }
 
   render() {
-    const index = this.state.index;
-    const quotesLength = this.state.quotes.length;
     const quotes = this.state.quotes;
+    const quotesLength = quotes.length;
+    const index = Math.floor(Math.random() * quotesLength);
     const handleClick = (e) => {
       e.preventDefault();
-      const randomIndex = Math.floor(Math.random() * quotesLength);
       this.setState({
-        index: randomIndex
+        index
       })
     }
 
