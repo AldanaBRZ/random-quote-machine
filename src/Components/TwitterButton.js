@@ -9,8 +9,8 @@ const TwitterButton = (props) => {
           url="twitter.com/intent/tweet"
           title={'"' + props.quote + '"' + ' -' + props.author + ' #quote'}>
           <a href={"twitter.com/intent/tweet"} 
-            id="tweet-quote"><i 
-            class="fa fa-twitter"
+            id="tweet-quote">
+            <i className="fa fa-twitter"
             title="Share on Twitter"></i></a>
         </TwitterShareButton>
     </div>
