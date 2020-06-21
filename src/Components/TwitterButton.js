@@ -10,7 +10,7 @@ const TwitterButton = (props) => {
           title={'"' + props.quote + '"' + ' -' + props.author + ' #quote'}>
           <a href={"twitter.com/intent/tweet"} 
             id="tweet-quote">
-            <i className="fa fa-twitter"
+            <i className="fab fa-twitter"
             title="Share on Twitter"></i></a>
         </TwitterShareButton>
     </div>
